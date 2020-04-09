@@ -1,0 +1,16 @@
+PODS:
+  - GCSpringiOS (0.1.0)
+
+DEPENDENCIES:
+  - GCSpringiOS (from `../`)
+
+EXTERNAL SOURCES:
+  GCSpringiOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GCSpringiOS: d90a8dc33f8626466d55ac938c8a6142f2954062
+
+PODFILE CHECKSUM: c2846d077eb3acd865db92f45eb2874b46fc955f
+
+COCOAPODS: 1.9.0

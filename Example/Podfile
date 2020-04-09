@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'GCSpringiOS_Example' do
+  pod 'GCSpringiOS', :path => '../'
+
+  target 'GCSpringiOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

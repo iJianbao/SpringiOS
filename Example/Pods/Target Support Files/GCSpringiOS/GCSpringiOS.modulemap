@@ -1,0 +1,6 @@
+framework module GCSpringiOS {
+  umbrella header "GCSpringiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
