@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AViewController : UIViewController
 
 @property (nonatomic, strong) TestViewModel<GCAutoWriteProtocol> *testViewModel;
-//@property (nonatomic, strong) TestViewModel<GCAutoWriteProtocol> *testViewModel2;
+
 @end
 
 NS_ASSUME_NONNULL_END

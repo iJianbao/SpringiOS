@@ -19,9 +19,9 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-//        [self addAdapte:[[TestAdapte alloc] init] selName:@"testRun" adapterSelName:@"printTime"];
-//        [self addAdapte:[[TestAdapte alloc] init] selName:@"testRun2:" adapterSelName:@"printTime2:"];
-//        [self addAdapte:[[TestAdapte alloc] init] selName:@"testRun2:withObj2:" adapterSelName:@"printTime2:withObjc2:"];
+        [self addAdapte:[[TestAdapte alloc] init] selName:@"testRun" adapterSelName:@"printTime"];
+        [self addAdapte:[[TestAdapte alloc] init] selName:@"testRun2:" adapterSelName:@"printTime2:"];
+        [self addAdapte:[[TestAdapte alloc] init] selName:@"testRun2:withObj2:" adapterSelName:@"printTime2:withObjc2:"];
         
 //        [_test22ViewModel testRun];
     }
