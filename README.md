@@ -35,7 +35,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
     NSLog(@"%s - %@ - %@ - %@", __func__, self, obj, obj2);
 }
 @end
-1.2 在 AViewController 中增加属性 TestViewModel 
+1.2 在 AViewController 中增加属性 TestViewModel，不需要对testViewModel进行初始化
 @interface AViewController : UIViewController
 
 @property (nonatomic, strong) TestViewModel<GCAutoWriteProtocol> *testViewModel;
@@ -75,7 +75,9 @@ GCSpringiOS_Example[42707:3359415] -[TestViewModel testRun2:withObj2:] - <TestVi
 - (instancetype)init {
     self = [super init];
     if (self) {
+        // 在执行testRun之前和之后，都会去执行printTime的方法
         [self addAdapte:[[TestAdapte alloc] init] selName:@"testRun" adapterSelName:@"printTime"];
+        // 会将testRun2:携带的参数一并传入printTime2:中
         [self addAdapte:[[TestAdapte alloc] init] selName:@"testRun2:" adapterSelName:@"printTime2:"];
         [self addAdapte:[[TestAdapte alloc] init] selName:@"testRun2:withObj2:" adapterSelName:@"printTime2:withObjc2:"];
     }
