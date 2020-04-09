@@ -13,6 +13,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ### EXample1：实现自动注入参数
+```
 1.1 定义一个ViewModel类，遵守 GCSpringPrototypeProtocol 协议
 @interface TestViewModel : NSObject<GCSpringPrototypeProtocol>
 
@@ -57,8 +58,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 GCSpringiOS_Example[42707:3359415] -[TestViewModel testRun] - <TestViewModel: 0x600002303c40>
 GCSpringiOS_Example[42707:3359415] -[TestViewModel testRun2:] - <TestViewModel: 0x600002303c40> - 11111
 GCSpringiOS_Example[42707:3359415] -[TestViewModel testRun2:withObj2:] - <TestViewModel: 0x600002303c40> - 22222 - 33333
-
+```
 ### EXample2：实现面向切面
+```
 2.1 定义一个ViewModel类，遵守 GCSpringPrototypeProtocol 和 GCBuildProxyProtocol 协议
 @interface TestViewModel : NSObject<GCSpringPrototypeProtocol, GCBuildProxyProtocol>
 
@@ -108,7 +110,7 @@ GCSpringiOS_Example[42819:3363254] 时间 = 1586414746.309760, 11111
 GCSpringiOS_Example[42819:3363254] 时间 = 1586414746.310046, 22222, 33333
 GCSpringiOS_Example[42819:3363254] -[TestViewModel testRun2:withObj2:] - <TestViewModel: 0x600000f4d8a0> - 22222 - 33333
 GCSpringiOS_Example[42819:3363254] 时间 = 1586414746.310619, 22222, 33333
-
+```
 ## Requirements
 
 ## Installation
